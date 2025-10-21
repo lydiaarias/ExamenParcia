@@ -41,12 +41,12 @@ app.get("/ld", (req, res) => {
 });
 
 //Mostrar una peli por su ID
-//Buscar por ID. Si no existe, devolver 404 con { message: "Equipo no encontrado" }.
+//Buscar por ID. Si no existe, devolver 404 con { message: "Peli no encontrada" }.
 app.get("/ld/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const ld = LDs.find(t => t.id === id);
     if (ld) {
-        res.json(LDs);
+        res.json(ld);
     } else {
         res.status(404).json({ message: "Pelicula no encontrada" });
     }
