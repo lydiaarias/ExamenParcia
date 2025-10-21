@@ -1,13 +1,13 @@
 {
-  "name": "curso2526",
+  "name": "Parcial",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node previoParcial.ts",
+    "start": "ts-node index.ts",
     "build": "tsc",
-    "dev": "nodemon --exec ts-node previoParcial.ts"
+    "dev": "nodemon --exec ts-node index.ts"
   },
   "keywords": [],
   "author": "",
